@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <style>
+    body{
+      margin:0;
+    }
+    a{
+      color:black;
+      text-decoration: none;
+    }
+    h1{
+      font-size:60px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:30px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:30px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{//grid 내부의 ol 태그라는 의미
+      padding-left:25px;
+    }
+    #grid #article{
+    padding-left: 30px;
+    }
+    @media(max-width:500px){
+      #grid{
+        display:block;
+      }
+      ol{
+        border-right:none;
+      }
+      h1{
+        border-bottom:none;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <h1><a href="home.html">About Me</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="playlist.html">PLAYLIST</a></li>
+        <li><a href="comment.html">COMMENT</a></li>
+      </ol>
+      <div id="article">
+    <h2>COMMENT</h2>
+    <p>이 사이트를 방문하신 여러분 모두 새해 복 많이 받으시고 행복한 2023년 한 해가 되길 바랍니다 :)<br> - 2023.01.16</p>
+  </body>
+</html>

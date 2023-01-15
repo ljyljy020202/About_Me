@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <style>
+    body{
+      margin:0;
+    }
+    a{
+      color:black;
+      text-decoration: none;
+    }
+    h1{
+      font-size:60px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:30px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:30px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{//grid 내부의 ol 태그라는 의미
+      padding-left:25px;
+    }
+    #grid #article{
+    padding-left: 30px;
+    }
+    @media(max-width:500px){
+      #grid{
+        display:block;
+      }
+      ol{
+        border-right:none;
+      }
+      h1{
+        border-bottom:none;
+      }
+    }
+    </style>
+
+  </head>
+  <body>
+    <h1><a href="home.html">About Me</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="playlist.html">PLAYLIST</a></li>
+        <li><a href="comment.html">COMMENT</a></li>
+      </ol>
+      <div id="article">
+    <h2>웹사이트 소개</h2>
+    <p>이 사이트는 <a href="https://www.youtube.com/c/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A91" target="_blank" style="text-decoration:underline">유튜브 생활코딩 채널</a>에서 html, css 강의를 듣고 내용을 실제로 적용해보기 위해 연습삼아 만들어 본 사이트입니다.
+      <br><br>
+    어떤 주제로 웹사이트를 만들지 고민하다가 제 자신에 대해 소개하는 사이트를 만들어 보았습니다ㅎㅎ</p>
+    <br><br><img src="06.jpg" width="600">
+
+  </body>
+</html>

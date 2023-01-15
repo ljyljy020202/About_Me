@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <style>
+    body{
+      margin:0;
+    }
+    a{
+      color:black;
+      text-decoration: none;
+    }
+    h1{
+      font-size:60px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:30px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:30px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{//grid 내부의 ol 태그라는 의미
+      padding-left:25px;
+    }
+    #grid #article{
+    padding-left: 30px;
+    }
+    @media(max-width:500px){
+      #grid{
+        display:block;
+      }
+      ol{
+        border-right:none;
+      }
+      h1{
+        border-bottom:none;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <h1><a href="home.html">About Me</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="playlist.html">PLAYLIST</a></li>
+        <li><a href="comment.html">COMMENT</a></li>
+      </ol>
+      <div id="article">
+    <h2>Profile</h2>
+    <p>
+    <img src="profile.jpg" width="100"><br><br>이름: 임지예 / Lim Ji-Ye<br>
+    생년월일: 2002.03.06<br>
+    거주지: 경기도 광주시 쌍령동<br>
+    학력: 쌍령초등학교 졸업 / 경화여자중학교 졸업 / 경화여자고등학교 졸업 / 건국대학교 재학 중<br>
+    좋아하는 음식 : 샌드위치, 치킨, 쌀국수, 초밥<br>
+    MBTI: INFJ<br>
+    link: <a href="https://www.instagram.com/ji__ye_l/" target="_blank" style="text-decoration:underline">인스타그램</a> <a href="https://blog.naver.com/limgeeee02" target="_blank" style="text-decoration:underline">네이버블로그</a> <a href="https://ttuttu02.tistory.com/" target="_blank" style="text-decoration:underline">티스토리</a><br>
+    </p>
+  </body>
+</html>
